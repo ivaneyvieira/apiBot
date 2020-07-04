@@ -3,6 +3,7 @@ package br.com.pintos.framework.util
 import java.awt.image.BufferedImage
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
+import java.io.File
 import java.io.IOException
 import java.io.InputStream
 import java.nio.charset.Charset
@@ -73,6 +74,7 @@ object SystemUtils {
     return readFile(file, Charset.defaultCharset())
   }
   
+  /*
   @Throws(IOException::class)
   fun readFile(filename: String, encoding: Charset): String {
     val resource = SystemUtils::class.java.getResource(filename)
@@ -80,6 +82,23 @@ object SystemUtils {
     val encoded = Files.readAllBytes(path)
     return String(encoded, encoding)
   }
+  *
+   */
+  
+  @Throws(IOException::class)
+  fun readFile(filename: String, encoding: Charset): String {
+    val resource = SystemUtils::class.java.getResource(filename)
+    val file = File(resource.file)
+    val path = if(file.exists()) {
+      val uri = resource.toURI()
+      Paths.get(uri)
+    }
+    else
+      Paths.get(filename)
+    val encoded = Files.readAllBytes(path)
+    return String(encoded, encoding)
+  }
+  
   
   private fun hashString(type: String, input: String): String {
     val hexChar = "0123456789ABCDEF"
