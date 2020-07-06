@@ -16,7 +16,10 @@ WHERE numero = @NUMERO;
 SELECT numero,
        vendedor,
        celular,
-       grupo
+       grupo,
+       cast(CONCAT('https://api.whatsapp.com/send?phone=55',
+		   replace(replace(replace(replace(celular, ' ', ''), '(', ''), ')', ''), '-',
+			   '')) AS CHAR) AS link
 FROM bi.televenda
 WHERE lista = @LISTA
   AND numero = @NUMERO;
