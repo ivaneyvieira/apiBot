@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: bi
 -- ------------------------------------------------------
--- Server version	5.6.47
+-- Server version	5.6.49
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -39,7 +39,7 @@ CREATE TABLE `televenda` (
 
 LOCK TABLES `televenda` WRITE;
 /*!40000 ALTER TABLE `televenda` DISABLE KEYS */;
-INSERT INTO `televenda` VALUES (1,'Telefonia & Informática',1,'Carlos Eduardo','(86) 98164-4335','2020-07-06 17:09:08'),(1,'Telefonia & Informática',2,'Aldir','(86) 98858-0426','2020-07-06 17:07:29'),(1,'Telefonia & Informática',3,'Iris','(86) 98858-0006','2020-07-06 17:07:02'),(1,'Telefonia & Informática',4,'Auricélia','(86) 98858-0009','2020-07-06 17:00:08'),(1,'Telefonia & Informática',5,'Francisco Wellington','(86) 98858-0476','2020-07-06 17:08:11'),(2,'Eletrodomésticos & Eletroportáteis',6,'Adriana','(86) 98858-0382','2020-06-28 23:55:10'),(2,'Eletrodomésticos & Eletroportáteis',7,'Wallas','(86) 98876-2485','2020-06-28 23:55:09'),(2,'Eletrodomésticos & Eletroportáteis',8,'Antônio Marcos','(86) 98195-3413','2020-06-28 23:55:12'),(2,'Eletrodomésticos & Eletroportáteis',9,'Iracema','(86) 98113-4235','2020-06-28 23:55:11'),(3,'Móveis (Colchões em geral, Estofados)',10,'Jerônimo','(86) 98170-5065','2020-06-29 01:30:34'),(3,'Móveis (Colchões em geral, Estofados)',11,'Vinícius','(86) 98858-0001','2020-06-29 01:30:33'),(3,'Móveis (Colchões em geral, Estofados)',12,'Maria Cláudia','(86) 98138-8667','2020-06-29 01:30:33'),(4,'Cama, Mesa e banho & Utilidades',13,'Tatiana','(86) 98113-1381','2020-06-28 00:00:00'),(4,'Cama, Mesa e banho & Utilidades',14,'Antônia','(86) 98884-5437','2020-06-28 00:00:00'),(5,'Calçados & Acessórios',15,'Tatiana','(86) 98113-1381','2020-06-28 00:00:00'),(5,'Calçados & Acessórios',16,'Antônia','(86) 98884-5437','2020-06-28 00:00:00'),(6,'Brinquedos & Artigos de bebê',17,'Marcos Renann','(86) 98858-3390','2020-06-28 00:00:00'),(6,'Brinquedos & Artigos de bebê',18,'Iara','(86) 98143-7202','2020-06-28 00:00:00');
+INSERT INTO `televenda` VALUES (1,'Telefonia & Informática',1,'Carlos Eduardo','(86) 98164-4335','2020-07-06 17:09:08'),(1,'Telefonia & Informática',2,'Aldir','(86) 98858-0426','2020-07-06 17:07:29'),(1,'Telefonia & Informática',3,'Iris','(86) 98858-0006','2020-07-06 17:07:02'),(1,'Telefonia & Informática',4,'Auricélia','(86) 98858-0009','2020-07-06 17:00:08'),(1,'Telefonia & Informática',5,'Francisco Wellington','(86) 98858-0476','2020-07-06 17:08:11'),(2,'Eletrodomésticos & Eletroportáteis',6,'Adriana','(86) 98858-0382','2020-06-28 23:55:10'),(2,'Eletrodomésticos & Eletroportáteis',7,'Wallas','(86) 98876-2485','2020-06-28 23:55:09'),(2,'Eletrodomésticos & Eletroportáteis',8,'Antônio Marcos','(86) 98195-3413','2020-06-28 23:55:12'),(2,'Eletrodomésticos & Eletroportáteis',9,'Iracema','(86) 98113-4235','2020-06-28 23:55:11'),(3,'Móveis (Colchões em geral, Estofados)',10,'Jerônimo','(86) 98170-5065','2020-06-29 01:30:34'),(3,'Móveis (Colchões em geral, Estofados)',11,'Vinícius','(86) 98858-0001','2020-06-29 01:30:33'),(3,'Móveis (Colchões em geral, Estofados)',12,'Maria Cláudia','(86) 98138-8667','2020-06-29 01:30:33'),(4,'Cama, Mesa e banho & Utilidades',13,'Tatiana','(86) 98113-1381','2020-06-28 00:00:00'),(4,'Cama, Mesa e banho & Utilidades',14,'Antônia','(86) 98884-5437','2020-06-28 00:00:00'),(5,'Calçados & Acessórios',15,'Tatiana','(86) 98113-1381','2020-06-28 00:00:00'),(5,'Calçados & Acessórios',16,'Antônia','(86) 98884-5437','2020-06-28 00:00:00'),(6,'Brinquedos & Artigos de bebê',17,'Marcos Renann','(86) 98858-3390','2020-06-28 00:00:00'),(6,'Brinquedos & Artigos de bebê',18,'Iara','(86) 98143-7202','2020-06-28 00:00:00'),(2,'Eletrodomésticos & Eletroportáteis',19,'Ronaldo','(86) 98884-5485','2020-06-28 00:00:00');
 /*!40000 ALTER TABLE `televenda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-06 14:21:07
+-- Dump completed on 2020-07-22 10:40:34
