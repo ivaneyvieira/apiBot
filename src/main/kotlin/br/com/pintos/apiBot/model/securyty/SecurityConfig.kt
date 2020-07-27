@@ -38,9 +38,9 @@ class SecurityConfig(val userSaciDetailsService: UserSaciDetailsService): WebSec
       ?.and()
       ?.csrf()
       ?.disable()
-      ?.requiresChannel()
-      ?.anyRequest()
-      ?.requiresSecure()
+    //  ?.requiresChannel()
+    //  ?.anyRequest()
+    //  ?.requiresSecure()
   }
   
   @Bean
