@@ -32,10 +32,13 @@ class SecurityConfig(val userSaciDetailsService: UserSaciDetailsService): WebSec
       ?.and()
       ?.csrf()
       ?.disable()
+      ?.requiresChannel()
+      ?.anyRequest()
+      ?.requiresSecure()
   }
   
   @Bean
-  fun authenticationProvider() : DaoAuthenticationProvider {
+  fun authenticationProvider(): DaoAuthenticationProvider {
     val authProvider = DaoAuthenticationProvider()
     authProvider.setUserDetailsService(userSaciDetailsService)
     authProvider.setPasswordEncoder(encoder())
@@ -43,5 +46,5 @@ class SecurityConfig(val userSaciDetailsService: UserSaciDetailsService): WebSec
   }
   
   @Bean
-  fun encoder() : PasswordEncoder = SaciPasswordEncoder()
+  fun encoder(): PasswordEncoder = SaciPasswordEncoder()
 }
