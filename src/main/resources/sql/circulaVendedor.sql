@@ -36,5 +36,5 @@ FROM T;
 
 
 SELECT *
-FROM T;
+FROM T
 
