@@ -1,4 +1,4 @@
-DO @LISTA := 1;
+DO @LISTA := :lista;
 
 DO @DATATIME := (SELECT MIN(ultimoAcesso)
 		 FROM televenda
