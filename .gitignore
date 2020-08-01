@@ -34,3 +34,4 @@ out/
 
 #### KEY ####
 *.pfx
+ebean.properties
