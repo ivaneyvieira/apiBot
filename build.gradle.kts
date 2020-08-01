@@ -44,8 +44,16 @@ tasks.withType<KotlinCompile> {
   }
 }
 
+<<<<<<< HEAD
 
 tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
   launchScript()
 }
 
+=======
+tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+  launchScript(){
+    properties(mapOf("logFilename" to "example-app.log"))
+  }
+}
+>>>>>>> 2180a686c0b11a2c3b4943aea94e28693c6f3387
