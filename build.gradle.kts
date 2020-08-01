@@ -43,3 +43,9 @@ tasks.withType<KotlinCompile> {
     jvmTarget = "1.8"
   }
 }
+
+tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+  launchScript(){
+    properties(mapOf("logFilename" to "example-app.log"))
+  }
+}

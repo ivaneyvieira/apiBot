@@ -1,4 +1,4 @@
-DO @LISTA := :lista;
+DO @LISTA := 1;
 
 DO @DATATIME := (SELECT MIN(ultimoAcesso)
 		 FROM televenda
@@ -13,6 +13,8 @@ UPDATE televenda
 SET ultimoAcesso = current_timestamp
 WHERE numero = @NUMERO;
 
+DROP TABLE IF EXISTS T;
+CREATE TEMPORARY TABLE T
 SELECT numero,
        vendedor,
        celular,
@@ -23,3 +25,16 @@ SELECT numero,
 FROM televenda
 WHERE lista = @LISTA
   AND numero = @NUMERO;
+
+INSERT INTO televenda_historico(numero, data_hora, vendedor, celular, grupo)
+SELECT numero,
+       current_timestamp AS data_hora,
+       vendedor,
+       celular,
+       grupo
+FROM T;
+
+
+SELECT *
+FROM T;
+
