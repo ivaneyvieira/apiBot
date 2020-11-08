@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api-bot:
+    image: openjdk:8 
+    environment:
+      TZ: "America/Fortaleza"
+      EBEAN_PROPS: /ebean.pintos.properties
+    volumes:
+      - ./build/libs/saci-1.0.jar:/saci-1.0.jar:z
+      - ./ebean.pintos.properties:/ebean.pintos.properties:z
+      - ./src/main/resources/sql:/sql:z
+    ports:
+      - "8443:8443"
+    command: "java -jar /saci-1.0.jar"
