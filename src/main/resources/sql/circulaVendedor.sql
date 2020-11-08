@@ -1,6 +1,10 @@
 DO @LISTA := :lista;
-DO @HI := time_to_sec('09:00');
-DO @HF := time_to_sec('17:00');
+DO @HI := time_to_sec('09:00:00');
+DO @HF := time_to_sec('17:00:00');
+
+DO @HIA := time_to_sec('08:00:00');
+DO @HFA := time_to_sec('17:00:00');
+
 DO @HA := time_to_sec(current_time);
 DO @HORARIO_COMERCIAL := IF(@HA BETWEEN @HI AND @HF, 'S', 'N');
 
